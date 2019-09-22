@@ -12,7 +12,7 @@
 		5008309C23369A7600B8BC65 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5008309B23369A7600B8BC65 /* Image.swift */; };
 		5008309E23369CC300B8BC65 /* DataGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5008309D23369CC300B8BC65 /* DataGallery.swift */; };
 		500830A62336BE5300B8BC65 /* GalleryViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500830A52336BE5300B8BC65 /* GalleryViewController+UICollectionViewDataSource.swift */; };
-		500830A82336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegate.swift */; };
+		500830A82336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegateFlowLayout.swift */; };
 		500830AA2336CAC200B8BC65 /* GalleryViewController+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500830A92336CAC200B8BC65 /* GalleryViewController+Request.swift */; };
 		500830AD2336CB2D00B8BC65 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500830AC2336CB2D00B8BC65 /* ServiceManager.swift */; };
 		50E8B43C23316C6B00EA5A50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8B43B23316C6B00EA5A50 /* AppDelegate.swift */; };
@@ -54,7 +54,7 @@
 		5008309B23369A7600B8BC65 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		5008309D23369CC300B8BC65 /* DataGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataGallery.swift; sourceTree = "<group>"; };
 		500830A52336BE5300B8BC65 /* GalleryViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
-		500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+UICollectionViewDelegate.swift"; sourceTree = "<group>"; };
+		500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
 		500830A92336CAC200B8BC65 /* GalleryViewController+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+Request.swift"; sourceTree = "<group>"; };
 		500830AC2336CB2D00B8BC65 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		50E8B43823316C6B00EA5A50 /* PocVentus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocVentus.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +132,7 @@
 				50E8B43D23316C6B00EA5A50 /* GalleryViewController.swift */,
 				500830A92336CAC200B8BC65 /* GalleryViewController+Request.swift */,
 				500830A52336BE5300B8BC65 /* GalleryViewController+UICollectionViewDataSource.swift */,
-				500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegate.swift */,
+				500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegateFlowLayout.swift */,
 			);
 			path = Gallery;
 			sourceTree = "<group>";
@@ -478,7 +478,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50FC72FE2332C68300EA72CF /* Gallery.swift in Sources */,
-				500830A82336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegate.swift in Sources */,
+				500830A82336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
 				50E8B43E23316C6B00EA5A50 /* GalleryViewController.swift in Sources */,
 				5008309C23369A7600B8BC65 /* Image.swift in Sources */,
 				50E8B43C23316C6B00EA5A50 /* AppDelegate.swift in Sources */,
