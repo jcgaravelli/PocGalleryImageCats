@@ -57,12 +57,12 @@
 		500830A72336BEC000B8BC65 /* GalleryViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
 		500830A92336CAC200B8BC65 /* GalleryViewController+Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GalleryViewController+Request.swift"; sourceTree = "<group>"; };
 		500830AC2336CB2D00B8BC65 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		505ABFFA233D93E900CB6D36 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50E8B43823316C6B00EA5A50 /* PocVentus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocVentus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E8B43B23316C6B00EA5A50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E8B43D23316C6B00EA5A50 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		50E8B44223316C6C00EA5A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50E8B44523316C6C00EA5A50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		50E8B44723316C6C00EA5A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50E8B44C23316C6D00EA5A50 /* PocVentusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocVentusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50E8B45023316C6D00EA5A50 /* PocVentusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocVentusTests.swift; sourceTree = "<group>"; };
 		50E8B45223316C6D00EA5A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				50E8B44223316C6C00EA5A50 /* Assets.xcassets */,
-				50E8B44423316C6C00EA5A50 /* LaunchScreen.storyboard */,
+				500830A42336BD3100B8BC65 /* Storyboards */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				50FC72F923317D9D00EA72CF /* Gallery.storyboard */,
+				50E8B44423316C6C00EA5A50 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -168,6 +169,58 @@
 				500830AC2336CB2D00B8BC65 /* ServiceManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		505ABFF3233D8AC700CB6D36 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5008309923368FBC00B8BC65 /* CollectionView Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		505ABFF4233D8AE300CB6D36 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				500830A32336BCA300B8BC65 /* Modules */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		505ABFF5233D8B4300CB6D36 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				500830AB2336CB0B00B8BC65 /* Service */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		505ABFF6233D8BDB00CB6D36 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				505ABFFA233D93E900CB6D36 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		505ABFF7233D8C0400CB6D36 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5008309A23368FE900B8BC65 /* Model */,
+				505ABFF3233D8AC700CB6D36 /* View */,
+				505ABFF4233D8AE300CB6D36 /* Controller */,
+				505ABFF5233D8B4300CB6D36 /* Networking */,
+				505ABFF8233D8C5C00CB6D36 /* Infrastructure */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		505ABFF8233D8C5C00CB6D36 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				50E8B43B23316C6B00EA5A50 /* AppDelegate.swift */,
+			);
+			path = Infrastructure;
 			sourceTree = "<group>";
 		};
 		50E8B42F23316C6B00EA5A50 = {
@@ -195,14 +248,9 @@
 		50E8B43A23316C6B00EA5A50 /* PocVentus */ = {
 			isa = PBXGroup;
 			children = (
-				50E8B43B23316C6B00EA5A50 /* AppDelegate.swift */,
-				50E8B44723316C6C00EA5A50 /* Info.plist */,
-				5008309923368FBC00B8BC65 /* CollectionView Cell */,
-				5008309A23368FE900B8BC65 /* Model */,
-				500830A32336BCA300B8BC65 /* Modules */,
+				505ABFF7233D8C0400CB6D36 /* Source */,
 				500830A12336B98F00B8BC65 /* Resources */,
-				500830AB2336CB0B00B8BC65 /* Service */,
-				500830A42336BD3100B8BC65 /* Storyboards */,
+				505ABFF6233D8BDB00CB6D36 /* SupportingFiles */,
 			);
 			path = PocVentus;
 			sourceTree = "<group>";
@@ -655,13 +703,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BL642YVUNB;
-				INFOPLIST_FILE = PocVentus/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PocVentus/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.PocVentus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -675,13 +725,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = BL642YVUNB;
-				INFOPLIST_FILE = PocVentus/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PocVentus/SupportingFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcgaravelli.PocVentus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

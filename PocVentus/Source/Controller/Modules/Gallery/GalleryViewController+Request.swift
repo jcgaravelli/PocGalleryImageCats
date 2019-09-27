@@ -14,7 +14,7 @@ extension GalleryViewController {
     func parseGallery() {
         ServiceManager().getGallery(searchText: "cats") { (gallery, error) in
             guard let gallery = gallery else {
-                print(error)
+                //print(error)
                 return
             }
             self.galleryImages = gallery
